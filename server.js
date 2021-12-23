@@ -28,10 +28,11 @@ app.use(cors());
 // });
 
 app.get('/', (req, res) => {
-    db.select('*').from('users').then(data => {
-        console.log('users table has:', data);
-        res.json(data);
-    });
+    res.send('It\'s working')
+    // db.select('*').from('users').then(data => {
+    //     console.log('users table has:', data);
+    //     res.json(data);
+    // });
     //res.json(database.users);
 })
 
